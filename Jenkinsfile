@@ -85,7 +85,7 @@ pipeline {
                 sh """
                 docker run -d \
                 --name frontend-container \
-                -p 8082:80 \
+                -p 8086:80 \
                 ${FRONTEND_IMAGE}:${TAG}
                 """
 
